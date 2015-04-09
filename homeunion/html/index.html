@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home Union</title>        
+        <!-- fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    	<!-- css -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        
+        <script language="javascript" type="text/javascript">
+		$( document ).ready(function() {
+			
+			$( ".css-shapes-preview" ).mousemove(function( event ) {
+
+				$( ".bannerright-data" ).fadeOut( "100" );
+				$( ".banner-right h1" ).fadeOut( "100" );
+				$( ".banner-right" ).css("z-index","1");
+				$( ".triangle").css( "left", "36%" );
+				
+				$( ".banner-left" ).css("z-index","6");
+				$( ".css-shapes-preview" ).css("z-index","6");
+				$( ".css-shapes-preview").css( "left", "37%" );
+								
+				$( ".banner-left h1" ).fadeIn( "slow" );
+								
+				$( ".bannerleft-data" ).fadeIn( "slow" );
+				$( ".banner").css( "background-position", "top left");
+				
+				/*
+				$( ".banner").css( "background", "url(images/blue-hover.png) center center no-repeat" );
+				$( ".banner" ).css( "background-size", "cover" );
+				*/
+			});
+			
+			$( ".banner-right, .triangle" ).mousemove(function( event ) {
+				
+				$( ".banner-left h1" ).fadeOut( "100" );
+				$( ".bannerleft-data" ).fadeOut( "100" );
+				$( ".css-shapes-preview").css( "left", "-80%" );
+				$( ".triangle").css( "left", "-81%" );
+				
+				$( ".banner-right" ).css("z-index","6");
+				$( ".banner-left" ).css("z-index","1");
+				$( ".css-shapes-preview" ).css("z-index","1");
+				
+				$( ".banner-right h1" ).fadeIn( "slow" );
+				$( ".bannerright-data" ).fadeIn( "slow" );
+				
+				$( ".banner").css( "background-position", "top right");
+				
+				/*
+				$( ".banner").css( "background", "url(images/green-hover.png) center center no-repeat" );
+				$( ".banner" ).css( "background-size", "cover" );
+				*/
+			});
+			
+			$(".banner").mouseleave(function(){
+				$( ".banner-left h1" ).fadeIn( "slow" );	
+				$( ".banner-right h1" ).fadeIn( "slow" );	
+				
+				$( ".bannerleft-data" ).fadeOut( "100" );
+				$( ".bannerright-data" ).fadeOut( "100" );
+				
+				$( ".banner").css( "background-position", "center center");
+				
+				/*
+				$( ".banner").css( "background", "url(images/big-banner.png) center center no-repeat" );
+				$( ".banner" ).css( "background-size", "cover" );
+				*/
+				$( ".triangle").css( "left", "-19%" );
+				$( ".css-shapes-preview").css( "left", "-18%" );
+			});
+			
+		});
+        </script>
+        
+</head>
+
+<body>
+	<div class="wrapper">
+    
+    	<!-- header -------------->
+        <header>
+        	<div class="container">
+            	<div class="header-inner">
+                	<div class="logo">
+                    	<a href="#"><img src="img/logo.png" alt="" title="" ></a>
+                    </div>
+                    <div class="right-header">
+                    	<div class="header-btns">
+                            <ul>
+                                <li><a href="#">Resident Log-in</a></li>
+                                <li><a href="#">Resident Log-in</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-socialicons">
+                        	<ul>
+                            	<li><a href="#"><img src="img/social-icon1.png" alt="" title="" /></a></li>
+                                <li><a href="#"><img src="img/social-icon2.png" alt="" title="" /></a></li>
+                                <li><a href="#"><img src="img/social-icon3.png" alt="" title="" /></a></li>
+                                <li><a href="#"><img src="img/social-icon4.png" alt="" title="" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>   
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- banner -------------->
+        <section class="banner">
+        	<div class="banner-left">
+            	<div class="css-shapes-preview"></div>
+            	<h1>RESIDENTS</h1>
+            	<div class="bannerleft-data">
+                	<div class="bannerleft-innerone">
+                        <ul>
+                        	<li>PAY RENT</li>
+                            <li>Submit Work Order</li>
+                            <li>contact your community</li>
+                            <li>and more</li>
+                        </ul>
+                    </div>
+                    <div class="bannerleft-innertwo">
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde 
+                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
+                    </div>
+                    <div class="clear"></div>    
+                </div>
+            </div>
+            <div class="banner-right">
+            	<div class="triangle"></div>
+            	<h1>LISTINGS</h1>
+                <div class="clear"></div>
+            	<div class="bannerright-data">
+                	<div class="bannerright-innerone">
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus 
+                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+                    </div>
+                    <div class="bannerright-innertwo">
+                    	
+                        <ul>
+                        	<li>Search available listings</li>
+                            <li>Schedule showings</li>
+                            <li>apply online</li>
+                            <li>and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- content ---------------->
+        <section class="content">
+        	<div class="container">
+            	<div class="homecontent-top">
+                	<div class="featuredlisting-one">
+                    	<div class="featuredone-left">
+                        	<img src="img/featured-thumbnail1.png" alt="" title="" >
+                        </div>
+                        <div class="featuredone-right">
+                        	<h2>FEATURED LISTING</h2>
+                            <h3>LISTING NAME</h3>
+                            <h4>Irvine, CA</h4>
+                            <p>Situated in the heart of Irvine, This quaint, quiet community shows the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="featuredlisting-one featuredlisting-two">
+                    	<div class="featuredone-left">
+                        	<img src="img/featured-thumbnail1.png" alt="" title="" >
+                        </div>
+                        <div class="featuredone-right">
+                        	<h2>FEATURED LISTING</h2>
+                            <h3>LISTING NAME</h3>
+                            <h4>Irvine, CA</h4>
+                            <p>Situated in the heart of Irvine, This quaint, quiet community shows the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- footer ---------------->
+        <footer>
+        	<div class="container">
+            	<div class="footer-inner">
+                	<div class="footer-left">
+                    	<h5>About HomeUnion</h5>
+                        <p>HomeUnion is a whole new way to invest in residential real estate. It’s simple: you invest, we do the rest. We identify solid, cash producing properties, walk 
+                        you through all phases of aquisition, manage all aspects of the property after your purchase, and help you sell the property when you’re ready. You make informed 
+                        decisions, enjoy the transparency of the entire process and collect targeted returns of up to 15%.</p>
+                        <ul>
+                        	<li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Licensing</a></li>
+                        </ul>
+                        <p>© 2015 HomeUnion, Inc. All Rights Reserved.</p>
+                    </div>
+                    <div class="footer-left footer-right">
+                    	<div class="footerright-one">
+                        	<div class="footer-popup">
+                            	<p>"This place just continues to shine. Stellar service and fantastic results!"</p>
+                            </div>
+                            <div class="investor-title">
+                            	<p>John Smith, <span>Investor</span></p>
+                            </div>
+                        </div>
+                        <div class="footerright-two">
+                        	<h5>Contact Us</h5>
+                            <div class="contacus-detail">
+                            	<span>Address:</span>
+                                <p>2010 Main Street, Suite 250 Irvine, CA </br>92614</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="contacus-detail">
+                            	<span>Phone:</span>
+                                <p>866-732-3220</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="contacus-detail">
+                            	<span>Email:</span>
+                                <p>info@homeunion.com</p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="certificate-section">
+                            	<img src="img/certificate-thumb.png" alt="" title="" >
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
