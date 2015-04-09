@@ -115,7 +115,7 @@ footer .footer-left ul li a { text-decoration:none; color:#fff; font-size:14px; 
 footer .footer-left ul li:first-child { padding:0; }
 footer .footer-right { float:right; width: 728px; padding:0 0 0 74px; border-left:2px solid #8e8e93; }
 footer .footerright-one { float:left; width:280px; }
-footer .footer-popup { padding:25px 47px 67px 27px; background-color: #f0f0f0; border-radius:4px; position:relative; }
+footer .footer-popup { padding:25px 47px 67px 27px; background-color: #f0f0f0; border-radius:4px; position:relative;   background-color: #f2f; }
 footer .footer-popup:after { background:url(../img/popup-arrow.png) 0 0 no-repeat; content:""; position:absolute; width:31px; height:16px; bottom:-16px; }
 footer .footer-popup p { color:#535353; font-size:18px; line-height:26px; }
 footer .investor-title { background:url(../img/investor-icon.png) left top no-repeat; margin:14px 0 0 20px; }
